@@ -1,1 +1,9 @@
-type my data
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: i want install git
+    apt:
+      name: git
+      state: present
+    
